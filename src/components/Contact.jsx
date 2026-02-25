@@ -14,15 +14,32 @@ const Contact = () => {
     e.preventDefault();
     setStatus('sending');
 
-    // Simulate form submission - Replace with actual API call
-    setTimeout(() => {
-      // For demo purposes, we'll simulate success
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset status after 3 seconds
-      setTimeout(() => setStatus(''), 3000);
-    }, 1500);
+    // Replace with YOUR Formspree endpoint
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xykdozvr';
+
+    try {
+        const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+        }),
+        });
+
+        if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus(''), 3000);
+        } else {
+        setStatus('error');
+        }
+    } catch (error) {
+        setStatus('error');
+    }
   };
 
   const handleChange = (e) => {
@@ -186,22 +203,27 @@ const Contact = () => {
                     : 'bg-accent hover:bg-accentHover shadow-lg shadow-accent/25'
                 }`}
               >
-                {status === 'sending' ? (
-                  <>
-                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                    Sending...
-                  </>
-                ) : status === 'success' ? (
-                  <>
-                    <CheckCircle size={20} />
-                    Message Sent!
-                  </>
-                ) : (
-                  <>
-                    Send Message
-                    <Send size={20} />
-                  </>
-                )}
+                    {status === 'sending' ? (
+                        <>
+                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                        Sending...
+                        </>
+                    ) : status === 'error' ? (
+                        <>
+                        <AlertCircle size={20} />
+                        Try Again
+                        </>
+                    ) : status === 'success' ? (
+                        <>
+                        <CheckCircle size={20} />
+                        Message Sent!
+                        </>
+                    ) : (
+                        <>
+                        Send Message
+                        <Send size={20} />
+                        </>
+                    )}
               </button>
 
               {status === 'success' && (
