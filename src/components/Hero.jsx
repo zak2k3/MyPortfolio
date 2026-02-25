@@ -61,7 +61,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/zakariya-baaziz-769b77390/" 
               className="text-slate-500 hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >

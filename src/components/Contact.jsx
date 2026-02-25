@@ -118,7 +118,7 @@ const Contact = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="#"
+                  href="https://www.linkedin.com/in/zakariya-baaziz-769b77390/"
                   className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-blue-600 hover:text-white transition-all"
                   aria-label="LinkedIn"
                 >
