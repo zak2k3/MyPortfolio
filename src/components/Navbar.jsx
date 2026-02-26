@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
+
 const Navbar = ({ darkMode, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
+    { name: 'CV', href: '/cv'}
   ];
 
   return (
@@ -29,7 +31,8 @@ const Navbar = ({ darkMode, toggleTheme }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold text-accent tracking-tighter">
+          <a href="#" className="flex items-center gap-3 text-2xl font-bold text-accent tracking-tighter">
+            
             Zakariya B<span className="text-slate-900 dark:text-white">.</span>
           </a>
           
@@ -39,6 +42,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
               <a 
                 key={link.name} 
                 href={link.href}
+                target={link.name.toLowerCase() === "cv" ? "_blank" : "_self"}
                 className="text-slate-600 dark:text-slate-300 hover:text-accent dark:hover:text-accent transition-colors text-sm font-medium"
               >
                 {link.name}

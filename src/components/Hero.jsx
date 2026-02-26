@@ -63,12 +63,14 @@ const Hero = () => {
             <a 
               href="https://www.linkedin.com/in/zakariya-baaziz-769b77390/" 
               className="text-slate-500 hover:text-accent transition-colors"
+              target="_blank" 
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:zakariya@example.com" 
+              href="mailto:zakarriyabaaziz2k3@gmail.com" 
+              target='_blank'
               className="text-slate-500 hover:text-accent transition-colors"
               aria-label="Email"
             >
