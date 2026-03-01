@@ -15,21 +15,21 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6">
               About Me
             </h2>
-            <div className="w-20 h-1 bg-accent rounded-full mb-8"></div>
+            <div className="w-20 h-1 bg-[#FFD60A] rounded-full mb-8"></div>
             
-            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+            <p className="text-[#2563EB] dark:text-slate-400 text-lg leading-relaxed mb-6">
               I'm <strong className="text-slate-900 dark:text-white">Zakariya Baaziz</strong>, a Web Full Stack Developer with a passion for building scalable, 
-              high-performance web applications. My expertise lies in the <strong className="text-accent">Laravel</strong> ecosystem 
-              for robust backend architecture and <strong className="text-accent">React</strong> for creating intuitive user interfaces.
+              high-performance web applications. My expertise lies in the <strong className="text-[#FFD60A]">Laravel</strong> ecosystem 
+              for robust backend architecture and <strong className="text-[#FFD60A]">React</strong> for creating intuitive user interfaces.
             </p>
             
-            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+            <p className="text-[#2563EB] dark:text-slate-400 text-lg leading-relaxed mb-6">
               I approach development with a systems-thinking mindset, focusing on clean code, 
               database optimization, and scalable architecture. My goal is to deliver solutions 
               that not only work flawlessly but are also maintainable and extensible.
             </p>
             
-            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+            <p className="text-[#2563EB] dark:text-slate-400 text-lg leading-relaxed">
               Beyond coding, I have a strong interest in financial markets and technical analysis, 
               which has influenced my approach to data-driven decision making in software development.
             </p>

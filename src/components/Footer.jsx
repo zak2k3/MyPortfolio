@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Copyright */}
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-accent">Zakariya B.</span>
-            <span className="text-slate-600 dark:text-slate-400">
+            <span className="text-2xl font-bold text-[#FFD60A]">Zakariya B.</span>
+            <span className="text-[#2563EB] dark:text-slate-400">
               © {currentYear} Zakariya Baaziz. All rights reserved.
             </span>
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
               href="https://github.com/zak2k3"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-accent hover:text-white transition-all shadow-sm"
+              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-[#2563EB] dark:text-slate-400 hover:bg-[#FFD60A] hover:text-white transition-all shadow-sm"
               aria-label="GitHub"
             >
               <Github size={20} />
@@ -30,14 +30,14 @@ const Footer = () => {
             <a 
               href="https://www.linkedin.com/in/zakariya-baaziz-769b77390/"
               target='_blank'
-              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm"
+              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-[#2563EB] dark:text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow-sm"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a 
               href="mailto:zakariya@example.com"
-              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-accent hover:text-white transition-all shadow-sm"
+              className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-[#2563EB] dark:text-slate-400 hover:bg-[#FFD60A] hover:text-white transition-all shadow-sm"
               aria-label="Email"
             >
               <Mail size={20} />

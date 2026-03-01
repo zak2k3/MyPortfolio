@@ -37,7 +37,7 @@ const Projects = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-[#2563EB] dark:text-slate-400 max-w-2xl mx-auto">
             Real-world applications demonstrating full-stack development capabilities.
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-accent/50 transition-all duration-300"
+              className="group bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-[#FFD60A]/50 transition-all duration-300"
             >
               {/* Project Header */}
               <div className={`h-48 bg-gradient-to-br ${project.gradient} p-8 flex items-end`}>
@@ -64,7 +64,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                <p className="text-[#2563EB] dark:text-slate-400 mb-6 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -73,7 +73,7 @@ const Projects = () => {
                   {project.tech.map((tech) => (
                     <span 
                       key={tech}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
+                      className="px-3 py-1 text-xs font-medium rounded-full bg-slate-200 dark:bg-slate-700 text-[#2563EB] dark:text-slate-300"
                     >
                       {tech}
                     </span>
@@ -86,14 +86,14 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors"
+                    className="flex items-center gap-2 text-[#2563EB] dark:text-slate-300 hover:text-[#FFD60A] transition-colors"
                   >
                     <Github size={20} />
                     <span className="text-sm font-medium">Code</span>
                   </a>
                   <a 
                     href={project.live}
-                    className="flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:text-accent transition-colors"
+                    className="flex items-center gap-2 text-[#2563EB] dark:text-slate-300 hover:text-[#FFD60A] transition-colors"
                   >
                     <ExternalLink size={20} />
                     <span className="text-sm font-medium">Live Demo</span>

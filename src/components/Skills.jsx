@@ -44,7 +44,7 @@ const Skills = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-dark mb-4">
             Technical Skills
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-[#2563EB] dark:text-slate-400 max-w-2xl mx-auto">
             A comprehensive toolkit for building modern, scalable web applications.
           </p>
         </motion.div>
@@ -69,10 +69,10 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name}>
                     <div className="flex justify-between mb-1">
-                      <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                      <span className="text-sm font-medium text-[#2563EB] dark:text-slate-300">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-slate-500 dark:text-slate-500">
+                      <span className="text-sm text-[#2563EB] dark:text-[#2563EB]">
                         {skill.level}%
                       </span>
                     </div>

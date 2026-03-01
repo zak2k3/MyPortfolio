@@ -7,7 +7,6 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CV from './components/CV';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -21,8 +20,6 @@ function App() {
     return true;
   });
 
-  // Check if we're on /cv route
-  const isCVRoute = window.location.pathname === '/cv';
 
   useEffect(() => {
     const html = document.documentElement;
@@ -40,10 +37,7 @@ function App() {
     setDarkMode(prev => !prev);
   };
 
-  // If on CV route, show only CV
-  if (isCVRoute) {
-    return <CV />;
-  }
+
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-white transition-colors duration-300">

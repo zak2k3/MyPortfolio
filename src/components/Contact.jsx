@@ -62,7 +62,7 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-[#2563EB] dark:text-slate-400 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Let's talk.
           </p>
         </motion.div>
@@ -78,41 +78,41 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
               Let's work together
             </h3>
-            <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+            <p className="text-[#2563EB] dark:text-slate-400 mb-8 leading-relaxed">
               Currently available for freelance work, part-time and full-time opportunities. 
               If you have a project that needs some creative touch, I'd love to hear about it.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent">
+                <div className="w-12 h-12 rounded-xl bg-[#FFD60A]/20 flex items-center justify-center text-[#FFD60A]">
                   <Mail size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-slate-500 dark:text-slate-500">Email</p>
+                  <p className="text-sm text-[#2563EB] dark:text-[#2563EB]">Email</p>
                   <p className="text-slate-900 dark:text-white font-medium">zakarriyabaaziz2k3@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent">
+                <div className="w-12 h-12 rounded-xl bg-[#FFD60A]/20 flex items-center justify-center text-[#FFD60A]">
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-slate-500 dark:text-slate-500">Location</p>
+                  <p className="text-sm text-[#2563EB] dark:text-[#2563EB]">Location</p>
                   <p className="text-slate-900 dark:text-white font-medium">Remote / Worldwide</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
-              <p className="text-sm text-slate-500 dark:text-slate-500 mb-4">Find me on</p>
+              <p className="text-sm text-[#2563EB] dark:text-[#2563EB] mb-4">Find me on</p>
               <div className="flex items-center gap-4">
                 <a 
                   href="https://github.com/zak2k3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-accent hover:text-white transition-all"
+                  className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#2563EB] dark:text-slate-400 hover:bg-[#FFD60A] hover:text-white transition-all"
                   aria-label="GitHub"
                 >
                   <Github size={20} />
@@ -120,7 +120,7 @@ const Contact = () => {
                 <a 
                   href="https://www.linkedin.com/in/zakariya-baaziz-769b77390/"
                   target='_blank'
-                  className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-blue-600 hover:text-white transition-all"
+                  className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#2563EB] dark:text-slate-400 hover:bg-blue-600 hover:text-white transition-all"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={20} />
@@ -141,7 +141,7 @@ const Contact = () => {
               <div>
                 <label 
                   htmlFor="name" 
-                  className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                  className="block text-sm font-medium text-[#2563EB] dark:text-slate-300 mb-2"
                 >
                   Your Name
                 </label>
@@ -160,7 +160,7 @@ const Contact = () => {
               <div>
                 <label 
                   htmlFor="email" 
-                  className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                  className="block text-sm font-medium text-[#2563EB] dark:text-slate-300 mb-2"
                 >
                   Email Address
                 </label>
@@ -179,7 +179,7 @@ const Contact = () => {
               <div>
                 <label 
                   htmlFor="message" 
-                  className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                  className="block text-sm font-medium text-[#2563EB] dark:text-slate-300 mb-2"
                 >
                   Message
                 </label>
@@ -201,7 +201,7 @@ const Contact = () => {
                 className={`w-full py-4 rounded-xl font-semibold text-white transition-all flex items-center justify-center gap-2 ${
                   status === 'sending'
                     ? 'bg-slate-400 cursor-not-allowed'
-                    : 'bg-accent hover:bg-accentHover shadow-lg shadow-accent/25'
+                    : 'bg-[#FFD60A] hover:bg-[#FFD60A]Hover shadow-lg shadow-[#FFD60A]/25'
                 }`}
               >
                     {status === 'sending' ? (

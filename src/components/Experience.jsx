@@ -51,7 +51,7 @@ const Experience = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-dark mb-4">
             Experience & Learning
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-[#2563EB] dark:text-slate-400 max-w-2xl mx-auto">
             My journey in software development and continuous growth.
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ const Experience = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-700"
             >
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6">
+              <div className="w-12 h-12 rounded-xl bg-[#FFD60A]/20 flex items-center justify-center text-[#FFD60A] mb-6">
                 {exp.icon}
               </div>
               
@@ -74,14 +74,14 @@ const Experience = () => {
                 {exp.title}
               </h3>
               
-              <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+              <p className="text-[#2563EB] dark:text-slate-400 mb-6 leading-relaxed">
                 {exp.description}
               </p>
               
               <ul className="space-y-3">
                 {exp.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                  <li key={i} className="flex items-start gap-3 text-sm text-[#2563EB] dark:text-slate-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFD60A] mt-2 flex-shrink-0"></span>
                     {point}
                   </li>
                 ))}
